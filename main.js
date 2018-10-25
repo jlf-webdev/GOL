@@ -205,7 +205,7 @@ function resize(){
   pageWidth = window.screen.availWidth;
   pageHeight = window.screen.availHeight;
   canvas.width = Math.floor(pageWidth/20)*20;
-  canvas.height = Math.floor(pageHeight/20)*20;
+  canvas.height = Math.floor(pageHeight/20)*20 -20;
 
   /*if(pageWidth>770){
     canvas.width = Math.floor(pageWidth/50)*50 ;
