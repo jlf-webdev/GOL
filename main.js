@@ -252,7 +252,7 @@ function drawGrid(){
   c.fillRect(0,0,canvas.width,canvas.height);
 
   c.lineWidth = 1;
-  c.strokeStyle = "#ccc";
+  c.strokeStyle = "#555";
 
   for (var i=1; i<cols; i++){
     c.beginPath();
