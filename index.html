@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Game Of Life (alpha 0.4)</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="noselect" onresize="getOpenSavedButtonPosition()">
+
+
+
+    <div id="startScreen" class="startScreen" onclick = "displayGame();setup();">
+      <div class="textWrapper">
+        <div class="title">John Conway's Game Of Life (alpha version)</div>
+        <div class="text">The universe of the Game of Life is an infinite, two-dimensional orthogonal grid of square cells, each of which is in one of two possible states, alive or dead, (or populated and unpopulated, respectively). Every cell interacts with its eight neighbours, which are the cells that are horizontally, vertically, or diagonally adjacent. At each step in time, the following transitions occur:</div>
+
+         <ul>
+           <li>Any live cell with fewer than two live neighbors dies, as if by underpopulation.</li>
+           <li>Any live cell with two or three live neighbors lives on to the next generation.</li>
+           <li>Any live cell with more than three live neighbors dies, as if by overpopulation.</li>
+           <li>Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.</li>
+         </ul>
+
+        <div class="text">The initial pattern constitutes the seed of the system. The first generation is created by applying the above rules simultaneously to every cell in the seed; births and deaths occur simultaneously, and the discrete moment at which this happens is sometimes called a tick. Each generation is a pure function of the preceding one. The rules continue to be applied repeatedly to create further generations. - Wikipedia -</div>
+        <div class="clickToStart">Click on the text to start</div>
+      </div>
+
+      <div class="footer">jlf-webdev@gmail.com</div>
+   </div>
+
+    <div id="wrapper" class="wrapper">
+
+          <div id= "gameContainer" class="gameContainer" onclick="hideButtons()">
+              <canvas id="canvas" class="canvas"></canvas>
+          </div>
+
+
+          <div class="gameStatsContainer">
+              <div id="speedIndicator"class="speedIndicator">84%</div>
+              <div id="generation" class="genCounter"></div>
+              <div id="gridSize" class="gridSize">300*150</div>
+          </div>
+
+
+          <div id="plusMinusButtons" class="plusMinusButtons">
+              <div id="plus" class="plus"><i class="material-icons">add</i></div>
+              <div id="minus" class="minus"><i class="material-icons">remove</i></div>
+          </div>
+
+          <div id="saveButtons" class="saveButtons" >
+            <div id="save" class="button save noborder" onclick="savePattern();hideSpeedButtons();"><i class="material-icons">save</i></div>
+            <div id="previous" class="button previous noborder" onclick="skipPrevious();hideSpeedButtons();"><i class="material-icons">skip_previous</i></div>
+            <div id="next" class="button next noborder" onclick="skipNext();hideSpeedButtons();"><i class="material-icons">skip_next</i></div>
+            <div id="delete" class="button delete noborder" onclick="deletePattern();hideSpeedButtons();"><i class="material-icons">delete</i></div>
+          </div>
+
+
+
+
+
+          <div id="smallPanel" class="panel">
+
+              <div class="panelItem speed noborder" onclick="displaySpeedButtons()">
+                  <i class="material-icons" >av_timer</i>
+              </div>
+
+              <div class="noborder panelItem play" onclick="playPause();hideButtons();"><i id="playIcon" class="material-icons">play_arrow</i></div>
+              <div class="noborder panelItem replay" onclick="replay();hideButtons();"><i class="material-icons">cached</i></div>
+
+              <div id="openSavedButton"class="panelItem openSavedButton noborder" onclick="displaySaveButtons()">
+                 <i class="material-icons">save</i>
+              </div>
+
+
+              <div class="noborder panelItem random" onclick="random();hideButtons();"><i class="material-icons">shuffle</i></div>
+
+              <div class="noborder panelItem clear" onclick="clearGame();hideButtons();"><i class="material-icons">clear</i></div>
+
+
+              <div class="panelItem hidden save noborder" onclick="savePattern();hideButtons();"><i class="material-icons">save</i></div>
+              <div class="panelItem hidden previous noborder" onclick="skipPrevious();hideButtons();"><i class="material-icons">skip_previous</i></div>
+              <div class="panelItem hidden next noborder" onclick="skipNext();hideButtons();"><i class="material-icons">skip_next</i></div>
+              <div class="panelItem hidden delete noborder" onclick="deletePattern();hideButtons();"><i class="material-icons">delete</i></div>
+
+
+              <div  class="panelItem size noborder" onclick="displayGridButtons()">
+                 <i class="material-icons" >view_comfy</i>
+              </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+</body>
+<script src="main.js"></script>
+</html>
