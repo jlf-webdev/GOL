@@ -216,7 +216,6 @@ function resize(){
     canvas.width = Math.floor(pageWidth/20)*20;
     canvas.height = Math.floor(pageHeight/20)*20 -50;
     panelItem.style.paddingBottom = "15px";
-    canvas.style.paddingTop = "10px";
   }
 
   /*if(pageWidth>770){
