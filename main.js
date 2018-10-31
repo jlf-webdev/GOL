@@ -236,7 +236,7 @@ function createSizeList(){
   var sizeCounter = 0;
 
 
-  for(i=minSize; i<=99; i++){
+  for(i=minSize; i<=80; i++){
     var found = 0;
     var width = canvas.width;
     var height = canvas.height;
