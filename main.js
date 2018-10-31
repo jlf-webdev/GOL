@@ -217,16 +217,15 @@ function resize(){
   // rect = gameStatsContainer.getBoundingClientRect();
   // var gameStatsContainerHeight = rect.bottom - rect.top;
 
-  canvas.width = pageWidth;
-  canvas.height = pageHeight - (panelHeight/2);
-  /*if (pageWidth/pageHeight > 1){
+  
+  if (pageWidth/pageHeight > 1){
     canvas.width = pageWidth;
-    canvas.height = pageHeight -20;
+    canvas.height = pageHeight - (panelHeight/2);
   }
   else{
     canvas.width = pageWidth;
-    canvas.height = pageHeight - 50;
-  }*/
+    canvas.height = pageHeight - panelHeight;
+  }
 
   /*if(pageWidth>770){
     canvas.width = Math.floor(pageWidth/50)*50 ;
