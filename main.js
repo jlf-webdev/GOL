@@ -236,7 +236,7 @@ function createSizeList(){
   var sizeCounter = 0;
 
 
-  for(i=minSize; i<=60; i++){
+  for(i=minSize; i<=100; i++){
     var found = 0;
     var width = canvas.width;
     var height = canvas.height;
@@ -244,16 +244,16 @@ function createSizeList(){
     while (found != 1 && width >= canvas.width-10 && height >= canvas.height-10){
       if (width % i == 0){
         if (height % i == 0){
-          if (last_X_numberOfBoxes != width/i && last_Y_numberOfBoxes != height/i){
+          //if (last_X_numberOfBoxes != width/i && last_Y_numberOfBoxes != height/i){
             sizeList[sizeCounter] = new Size(i, width, height) ;
             console.log("\nsize : " + i);
             console.log("width : " + width);
             console.log("height : " + height);
             sizeCounter = sizeCounter + 1;
             found = 1;
-            var last_X_numberOfBoxes = width / i;
-            var last_Y_numberOfBoxes = height / i;
-          }
+          //  var last_X_numberOfBoxes = width / i;
+          //  var last_Y_numberOfBoxes = height / i;
+          //}
         }
         else{
           height -= 1;
