@@ -214,7 +214,7 @@ function resize(){
   }
   else{
     canvas.width = Math.floor(pageWidth/20)*20;
-    canvas.height = Math.floor(pageHeight/20)*20 -40;
+    canvas.height = Math.floor(pageHeight/20)*20 -50;
     panelItem.style.paddingBottom = "15px";
   }
 
