@@ -18,7 +18,11 @@ body{
   background: inherit;
 }
 
-
+.transparent {
+	zoom: 1;
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+}
 
 
 /*--------------------------------------------------------------------------
@@ -96,7 +100,7 @@ li{
   display: none;
   position:fixed;
   bottom : 50px;
-  background: #5553;
+  background: #555;
   color: #ccca;
 }
 
@@ -128,7 +132,7 @@ li{
 }
 
 .button{
-  background: #5553;
+  background: #555;
   color: #ccca;
   border : 1px solid;
   border-color: #333d;
@@ -164,13 +168,13 @@ li{
   width : 100%;
   display: grid;
   grid-template-columns: repeat(7,1fr);
-  background: #5552;
+  background: #555;
   border-top: 1px solid;
   border-color: #333d;
 }
 
 .panelItem{
-  color: #ccca;
+  color: #ccc;
   text-align: center;
   justify-content: center;
   padding-top: 0px;
@@ -276,7 +280,7 @@ li{
     width : 100%;
     display: grid;
     grid-template-columns: repeat(10,1fr);
-    background: #5552;
+    background: #555;
     border-top: 1px solid;
     border-color: #333d;
   }
