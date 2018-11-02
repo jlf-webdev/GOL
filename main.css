@@ -102,6 +102,7 @@ li{
   bottom : 50px;
   background: #555;
   color: #ccca;
+  border-radius: 5px 5px 5px 5px;
 }
 
 .plus{
