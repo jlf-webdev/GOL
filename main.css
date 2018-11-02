@@ -107,7 +107,7 @@ li{
 
 .plus{
   border : 1px solid;
-  border-color: #333d;
+  border-color: #222d;
   border-radius: 5px 5px 0 0;
   padding: 10px;
   padding-left: 7px;
@@ -116,7 +116,7 @@ li{
 
 .minus{
   border : 1px solid;
-  border-color: #333d;
+  border-color: #222d;
   border-radius: 0 0 5px 5px;
   padding: 10px;
   padding-left: 7px;
