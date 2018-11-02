@@ -19,9 +19,9 @@ body{
 }
 
 .transparent {
-	zoom: 1;
+	/*zoom: 1;
 	filter: alpha(opacity=50);
-	opacity: 0.5;
+	opacity: 0.5;*/
 }
 
 
