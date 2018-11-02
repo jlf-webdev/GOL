@@ -53,46 +53,46 @@
           </div>
 
 
-          <div id="plusMinusButtons" class="plusMinusButtons">
+          <div id="plusMinusButtons" class="plusMinusButtons transparent">
               <div id="plus" class="plus"><i class="material-icons">add</i></div>
               <div id="minus" class="minus"><i class="material-icons">remove</i></div>
           </div>
 
           <div id="saveButtons" class="saveButtons" >
-            <div id="save" class="button save noborder" onclick="savePattern();hideSpeedButtons();"><i class="material-icons">save</i></div>
-            <div id="previous" class="button previous noborder" onclick="skipPrevious();hideSpeedButtons();"><i class="material-icons">skip_previous</i></div>
-            <div id="next" class="button next noborder" onclick="skipNext();hideSpeedButtons();"><i class="material-icons">skip_next</i></div>
-            <div id="delete" class="button delete noborder" onclick="deletePattern();hideSpeedButtons();"><i class="material-icons">delete</i></div>
+            <div id="save" class="button save noborder transparent" onclick="savePattern();hideSpeedButtons();"><i class="material-icons">save</i></div>
+            <div id="previous" class="button previous noborder transparent" onclick="skipPrevious();hideSpeedButtons();"><i class="material-icons">skip_previous</i></div>
+            <div id="next" class="button next noborder transparent" onclick="skipNext();hideSpeedButtons();"><i class="material-icons">skip_next</i></div>
+            <div id="delete" class="button delete noborder transparent" onclick="deletePattern();hideSpeedButtons();"><i class="material-icons">delete</i></div>
           </div>
 
 
 
-          <div id="panel" class="panel">
+          <div id="panel" class="panel transparent">
 
-              <div class="panelItem speed noborder" onclick="displaySpeedButtons()">
+              <div class="panelItem speed noborder transparent" onclick="displaySpeedButtons()">
                   <i class="material-icons" >av_timer</i>
               </div>
 
-              <div class="noborder panelItem play" onclick="playPause();hideButtons();"><i id="playIcon" class="material-icons">play_arrow</i></div>
-              <div class="noborder panelItem replay" onclick="replay();hideButtons();"><i class="material-icons">cached</i></div>
+              <div class="noborder panelItem play transparent" onclick="playPause();hideButtons();"><i id="playIcon" class="material-icons">play_arrow</i></div>
+              <div class="noborder panelItem replay transparent" onclick="replay();hideButtons();"><i class="material-icons">cached</i></div>
 
-              <div id="openSavedButton"class="panelItem openSavedButton noborder" onclick="displaySaveButtons()">
+              <div id="openSavedButton"class="panelItem openSavedButton noborder transparent" onclick="displaySaveButtons()">
                  <i class="material-icons">save</i>
               </div>
 
 
-              <div class="noborder panelItem random" onclick="random();hideButtons();"><i class="material-icons">shuffle</i></div>
+              <div class="noborder panelItem random transparent" onclick="random();hideButtons();"><i class="material-icons">shuffle</i></div>
 
-              <div class="noborder panelItem clear" onclick="clearGame();hideButtons();"><i class="material-icons">clear</i></div>
-
-
-              <div class="panelItem hidden save noborder" onclick="savePattern();hideButtons();"><i class="material-icons">save</i></div>
-              <div class="panelItem hidden previous noborder" onclick="skipPrevious();hideButtons();"><i class="material-icons">skip_previous</i></div>
-              <div class="panelItem hidden next noborder" onclick="skipNext();hideButtons();"><i class="material-icons">skip_next</i></div>
-              <div class="panelItem hidden delete noborder" onclick="deletePattern();hideButtons();"><i class="material-icons">delete</i></div>
+              <div class="noborder panelItem clear transparent" onclick="clearGame();hideButtons();"><i class="material-icons">clear</i></div>
 
 
-              <div  class="panelItem size noborder" onclick="displayGridButtons()">
+              <div class="panelItem hidden save noborder transparent" onclick="savePattern();hideButtons();"><i class="material-icons">save</i></div>
+              <div class="panelItem hidden previous noborder transparent" onclick="skipPrevious();hideButtons();"><i class="material-icons">skip_previous</i></div>
+              <div class="panelItem hidden next noborder transparent" onclick="skipNext();hideButtons();"><i class="material-icons">skip_next</i></div>
+              <div class="panelItem hidden delete noborder transparent" onclick="deletePattern();hideButtons();"><i class="material-icons">delete</i></div>
+
+
+              <div  class="panelItem size noborder transparent" onclick="displayGridButtons()">
                  <i class="material-icons" >view_comfy</i>
               </div>
           </div>
