@@ -101,7 +101,7 @@ li{
   position:fixed;
   bottom : 50px;
   background: #555;
-  color: #ccca;
+  color: #ccc;
   border-radius: 5px 5px 5px 5px;
 }
 
@@ -134,7 +134,7 @@ li{
 
 .button{
   background: #555;
-  color: #ccca;
+  color: #ccc;
   border : 1px solid;
   border-color: #333d;
   padding: 5px;
