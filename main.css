@@ -100,7 +100,7 @@ li{
   display: none;
   position:fixed;
   bottom : 50px;
-  background: #555;
+  background: #5558;
   color: #eee;
   border-radius: 5px 5px 5px 5px;
 }
@@ -169,7 +169,7 @@ li{
   width : 100%;
   display: grid;
   grid-template-columns: repeat(7,1fr);
-  background: #555;
+  background: #5552;
   border-top: 1px solid;
   border-color: #333d;
 }
@@ -282,7 +282,7 @@ li{
     width : 100%;
     display: grid;
     grid-template-columns: repeat(10,1fr);
-    background: #555;
+    background: #5552;
     border-top: 1px solid;
     border-color: #333d;
   }
