@@ -95,7 +95,7 @@ li{
 .plusMinusButtons{
   display: none;
   position:fixed;
-  bottom : 50px;
+  bottom : 45px;
   background: #111b;
   color: #ccca;
 }
