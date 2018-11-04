@@ -144,10 +144,15 @@ li{
 .save{
   border-radius: 5px 0 0 5px;
 }
-.previous{
+
+#previous{
+  padding-left: 7px;
+  padding-right: 7px;
 }
 
-.next{
+#next{
+  padding-left: 7px;
+  padding-right: 7px;
 }
 
 .delete{
