@@ -146,13 +146,13 @@ li{
 }
 
 #previous{
-  padding-left: 7px;
-  padding-right: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 #next{
-  padding-left: 7px;
-  padding-right: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .delete{
