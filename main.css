@@ -62,6 +62,7 @@ body{
 
 ul{
   justify-self: center;
+  align-self : center;
   padding: 0;
   font-size: 14px;
   width : 95vw;
@@ -69,7 +70,7 @@ ul{
 
 li{
   /*margin-left : 10px;*/
-  text-align: center;
+  text-align: left;
 }
 
 .clickToStart{
