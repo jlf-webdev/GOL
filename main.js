@@ -35,6 +35,50 @@ function fullscreen() {
         (document.mozFullScreenElement && document.mozFullScreenElement !== null) ||
         (document.msFullscreenElement && document.msFullscreenElement !== null);
 
+    var wrapper = document.getElementById('wrapper');
+    if (!isInFullScreen) {
+        fullscreenIcon_1.innerText = "fullscreen_exit";
+        fullscreenIcon_2.innerText = "fullscreen_exit";
+
+        if (wrapper.requestFullscreen) {
+            wrapper.requestFullscreen();
+        } else if (wrapper.mozRequestFullScreen) {
+            wrapper.mozRequestFullScreen();
+        } else if (wrapper.webkitRequestFullScreen) {
+            wrapper.webkitRequestFullScreen();
+        } else if (wrapper.msRequestFullscreen) {
+            wrapper.msRequestFullscreen();
+        }
+    } else {
+        fullscreenIcon_1.innerText = "fullscreen";
+        fullscreenIcon_2.innerText = "fullscreen";
+
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+        } else if (document.mozCancelFullScreen) {
+            document.mozCancelFullScreen();
+        } else if (document.msExitFullscreen) {
+            document.msExitFullscreen();
+        }
+    }
+
+    resize();
+}
+
+
+function fullscreen2() {
+
+
+    let fullscreenIcon_1 = document.querySelector('#fullscreenIcon_1');
+    let fullscreenIcon_2 = document.querySelector('#fullscreenIcon_2');
+
+    var isInFullScreen = (document.fullscreenElement && document.fullscreenElement !== null) ||
+        (document.webkitFullscreenElement && document.webkitFullscreenElement !== null) ||
+        (document.mozFullScreenElement && document.mozFullScreenElement !== null) ||
+        (document.msFullscreenElement && document.msFullscreenElement !== null);
+
     var docElm = document.documentElement;
     if (!isInFullScreen) {
         fullscreenIcon_1.innerText = "fullscreen_exit";
