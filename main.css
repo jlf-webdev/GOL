@@ -46,12 +46,12 @@ body{
 }
 
 .intro{
-  padding-top: 2em;
+  padding-top: 1em;
   padding-bottom: 1em;
 }
 
 .rules{
-  padding-top: 1em;
+  padding-top: 0em;
 }
 
 .text{
