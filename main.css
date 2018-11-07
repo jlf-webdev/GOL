@@ -64,10 +64,10 @@ ul{
   justify-self: center;
   padding: 0;
   font-size: 14px;
-  padding-left: 10px;
 }
 
 li{
+  margin-left : 10px;
   padding-left: 0;
   text-align: left;
 }
