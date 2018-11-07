@@ -852,7 +852,12 @@ function clearGame(){
       boxes[i][j].checked = 0;
     }
   }
-  drawGrid();
+  if (boxWidth > 2){
+    drawGrid();
+  }
+  else {
+    noGrid();
+  }
   gen = 0;
   genCounterElement.innerText= "Generation " + gen;
 }
