@@ -62,8 +62,7 @@ body{
 
 ul{
   justify-self: center;
-  align-self : center;
-  padding: 0;
+  /*padding: 0;*/
   font-size: 14px;
   width : 95vw;
 }
