@@ -44,7 +44,7 @@ function setup() {
   draw();
   genCounterElement.innerText = "Generation 0";
   gridSizeIndicator.innerText = cols + "*" + rows;
-  for (let i = 0; i < 8; i++) {
+  for (let i = 0; i < 7; i++) {
     speedDown();
   }
 }
