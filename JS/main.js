@@ -51,7 +51,7 @@ function setup() {
 var minSize = 1;
 var maxSize = 100;
 var sizeList = [];
-var boxSizeId = 4;
+var boxSizeId = 6;
 
 function createSizeList() {
   sizeList.length = 0;
