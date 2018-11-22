@@ -155,21 +155,17 @@ li{
   background: #111b;
   color: #ccc;
   padding: 7px;
-  padding-left: 7px;
-  padding-right: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .save{
 
 }
 .previous{
-  padding-left: 15px;
-  padding-right: 15x;
 }
 
 .next{
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .delete{
