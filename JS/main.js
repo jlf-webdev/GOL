@@ -39,7 +39,8 @@ function setup() {
   getOpenSavedButtonPosition();
   createGridArray();
   loadPatterns();
-  random();
+  startPatternObject = JSON.parse(defaultStartPattern);
+  replay();
   draw();
   genCounterElement.innerText = "Generation 0";
   gridSizeIndicator.innerText = cols + "*" + rows;
