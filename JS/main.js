@@ -39,7 +39,7 @@ function setup() {
   getOpenSavedButtonPosition();
   createGridArray();
   loadPatterns();
-  startPatternObject = JSON.parse(defaultStartPattern);
+  //startPatternObject = JSON.parse(defaultStartPattern);
   random();
   draw();
   genCounterElement.innerText = "Generation 0";
