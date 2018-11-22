@@ -597,7 +597,7 @@ function cachePattern(){
   var H_gridSize = cols;
   var V_gridSize = rows;
   startPatternObject = new pattern(id, name, startPattern, H_start, H_end, H_spread, H_gridSize, V_start, V_end, V_spread, V_gridSize);
-  console.log(JSON.stringify(startPatternObject[startPattern]));
+  console.log(JSON.stringify(startPatternObject.startPattern));
 }
 
 var patternObjects = [];
