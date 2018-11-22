@@ -40,7 +40,7 @@ function setup() {
   createGridArray();
   loadPatterns();
   startPatternObject = JSON.parse(defaultStartPattern);
-  replay();
+  random();
   draw();
   genCounterElement.innerText = "Generation 0";
   gridSizeIndicator.innerText = cols + "*" + rows;
