@@ -1,1 +1,2 @@
-# GOL_test
+# GOL
+
