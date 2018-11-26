@@ -220,6 +220,7 @@ function getScreenRatio() {
 }
 
 function resize() {
+  textDisplay();
   //playPause();
   /*console.log("Pattern Width : " + H_spread);
   console.log("Window innerWidth : " + canvas.width);
@@ -283,3 +284,4 @@ function resize() {
     }
   }
 }
+
